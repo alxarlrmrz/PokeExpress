@@ -11,11 +11,12 @@ const myStyle = {
           return (
                   <div style = {myStyle}> 
                       <h1>See All The Pokemon</h1>
+                      <div style={myStyle}>My First React Component</div>
                   <ul>
                     {pokemon.map((pokemon, i) => {
                       return (
                         <li>
-                          <a href={/pokemon/${i}}>
+                          <a href={`/pokemon/${i}`}>
                             {pokemon.name}
                           </a>
                         </li>
