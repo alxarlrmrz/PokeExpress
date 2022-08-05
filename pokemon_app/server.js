@@ -1,7 +1,20 @@
 const express = require('express');
-const pokemon = require('./models/pokemon');
+require('dotenv').config()
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3003;
+const mongoose = require('mongoose');
+const Pokemon = require('./models/pokemon');
+
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true, 
+    useUnifiedTopology: true});
+mongoose.connection.once('open', () => {
+    console.log('connected to mongo')
+});
+
+// const fruits = require('./models/fruits.js');---> refers to array of objects called fruits
+ //NOTE: it must start with ./ if it's just a file, not an NPM package
+ 
 
 //setting up our views
 app.set('view engine', 'jsx') //setting up our HTML template
