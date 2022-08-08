@@ -8,4 +8,4 @@ const pokemonData = [
     {name: "wartortle", img: "http://img.pokemondb.net/artwork/wartortle"}
 ];
     
-module.exports = pokemonData
+module.exports = pokemonData;
