@@ -1,51 +1,5 @@
 const React = require('react');
 
-const body = {
-    backgroundColor: "#e4000f ",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    height: "100%",
-    width: "100%",
-    color: "#FFDE00",
-    textDecoration: "underline"
-}
-
-const button = {
-    margin: "10px",
-    borderRadius: "25%",
-    border: "5px ridge black",
-    backgroundColor: "grey",
-    cursor: "pointer"
-}
-
-const h4 = {
-    padding: 0,
-    margin: "5px"
-}
-
-const main = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
-
-const row = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-}
-
-const margin1 = {
-    marginBottom: 0
-}
-
-const margin2 = {
-    marginBottom: 0,
-    marginTop: 0
-}
-
 class Index extends React.Component {
     render(){
         const { pokemon } = this.props;

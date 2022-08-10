@@ -1,36 +1,5 @@
 const React = require('react');
 
-const body = {
-    backgroundColor: "#e4000f ",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    height: "100%",
-    width: "100%",
-    color: "#FFDE00",
-    textDecoration: "underline"
-}
-
-const main = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
-
-const button = {
-    margin: "10px",
-    borderRadius: "25%",
-    border: "5px ridge black",
-    backgroundColor: "grey",
-    cursor: "pointer"
-}
-
-const back  = {
-    color: "#FFDE00",
-    border: "5px ridge black"
-}
-
 class Show extends React.Component {
     render(){
         const mons = this.props.pokemon;
